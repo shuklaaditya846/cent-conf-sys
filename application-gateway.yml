@@ -20,3 +20,12 @@ spring:
           predicates:
             - Path=/customers/**
           uri: customer-management-service:8081
+
+
+SSL_TLS_configuration:
+  server:
+    ssl:
+      key-store: "classpath:keystore.p12"
+      key-store-password: "password"
+      trust-store: "classpath:truststore.p12"
+      trust-store-password: "password"
